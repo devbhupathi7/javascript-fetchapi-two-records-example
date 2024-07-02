@@ -62,9 +62,9 @@ async function getData() {
     // Make a GET request to the specified API endpoint
     const response = await fetch('https://jsonplaceholder.typicode.com/posts'); // Public API endpoint
     // Check if the response is okay (status is in the range 200-299)
-    if (!response.ok) {
-      throw new Error('Network response was not ok'); // Throw an error if the response is not okay
-    }
+    // if (!response.ok) {
+    //   throw new Error('Network response was not ok'); // Throw an error if the response is not okay
+    // }
     // Parse the response body as JSON
     const data = await response.json();
     // Call the displayData function to handle the fetched data
